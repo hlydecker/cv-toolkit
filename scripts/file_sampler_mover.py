@@ -9,6 +9,21 @@ import pandas as pd
 import random
 import tqdm
 
+# Another option, from https://colab.research.google.com/github/google-research/vision_transformer/blob/master/vit_jax_augreg.ipynb#scrollTo=JOtCfWFOfVFq
+#def split(base_dir, test_ratio=0.1):
+#  paths = glob.glob(f'{base_dir}/*/*.jpg')
+#  random.shuffle(paths)
+#  counts = dict(test=0, train=0)
+#  for i, path in enumerate(paths):
+#    split = 'test' if i < test_ratio * len(paths) else 'train'
+#    *_, class_name, basename = path.split('/')
+#    dst = f'{base_dir}/{split}/{class_name}/{basename}'
+#    if not os.path.isdir(os.path.dirname(dst)):
+#      os.makedirs(os.path.dirname(dst))
+#    shutil.move(path, dst)
+#    counts[split] += 1
+#  print(f'Moved {counts["train"]:,} train and {counts["test"]:,} test images.')
+
 
 if __name__ == "__main__":
 
