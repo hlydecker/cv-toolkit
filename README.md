@@ -10,3 +10,9 @@ magick mogrify -colorspace gray *.jpg
 # parallel version
 parallel -X magick mogrify -colorspace gray ::: *.jpg
 ```
+
+## Find and count all images in a directory
+
+```bash
+find . -type f | sed -e 's/.*\.//' | sort | uniq -c | sort -n | grep -Ei '(tiff|bmp|jpeg|jpg|png|gif)$'
+```
