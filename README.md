@@ -1,6 +1,8 @@
 # cv-toolkit
 Various random computer vision utility scripts, mostly Python or shell.
 
+# Useful Bash Utilities
+
 ## Turn rgb into greyscale
 
 ```bash
