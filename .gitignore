@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# the dreaded dee ess underscore store
+.DS_Store
+*/.DS_Store
