@@ -29,3 +29,7 @@ parallel -X magick mogrify -colorspace gray ::: *.jpg
 ```bash
 find . -type f | sed -e 's/.*\.//' | sort | uniq -c | sort -n | grep -Ei '(tiff|bmp|jpeg|jpg|png|gif)$'
 ```
+
+Where:
+- `.` is the directory you want to search in. By default this will look in the current directory.
+- `'(tiff|bmp|jpeg|jpg|png|gif)$'` defines the file to look for and what to group them into.
