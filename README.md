@@ -1,5 +1,24 @@
 # cv-toolkit
-Various random computer vision utility scripts, mostly Python or shell.
+Various random computer vision utility scripts (python or shell), as well as a few notebooks for various things.
+
+## Resources
+
+## Notebooks
+
+Clone the repository to your local machine or a VM (e.g. Colab), then:
+
+```bash
+conda create -n cv-toolkit python=3.9
+conda activate cv-toolkit
+pip install -r requirements.txt
+
+jupyter-lab
+```
+
+Then navigate to the notebook you want to use.
+
+### Pytorch Neural Net
+
 
 ## Current Scripts
 
